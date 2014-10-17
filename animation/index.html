@@ -1,0 +1,73 @@
+<!doctype html>
+
+<head>
+
+	<link rel="stylesheet" href="style.css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/ui/1.8.18/jquery-ui.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+			$('#player1').hover(function() { //onhover
+				$(this).animate({ height: '+=80'}, '0');
+			},
+
+			function() {
+				$(this).animate({ height: '-=80'}, '0');
+			}
+			);
+		});
+
+
+		$(document).ready(function(){
+
+    	function checkKey(e){
+         switch (e.keyCode) {
+            case 40:
+                //alert('down');
+                $('#player2').animate({top: "+=10px"}, "1000")
+                break;
+            case 38:
+                //alert('up');
+                $('#player2').animate({top: "-=10px"}, "1000")
+                break;
+            case 37:
+                //alert('left');
+                $('#player2').animate({left: "-=10px"}, "1000")
+                break;
+            case 39:
+                //alert('right');
+                $('#player2').animate({left: "+=10px"}, "1000")
+                break;
+            default:
+                alert('???');  
+                }      
+    	}
+
+    if ($.browser.mozilla) {
+        $(document).keydown (checkKey);
+    } else {
+        $(document).keydown (checkKey);
+    }
+});
+
+
+
+	</script>
+
+</head>
+
+<body>
+
+	<div id="header">
+		
+	</div>
+
+	<div id="container">
+
+		<div class="player" id="player1"></div>
+		<div class="player" id="player2"></div>
+
+	</div>
+</body>
