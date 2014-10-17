@@ -30,7 +30,7 @@ session_start();
 include('../libraries/base.inc.php');
 include('../libraries/login.inc.php');
 if(!empty($_POST['username'])) {
-	register($_SESSION['FBID'], 'facebook', null);
+	register($_SESSION['FBID'], 'facebook', 'noreply@facebook.com');
 }
 echo('swag' . $_SESSION['FBID']);
 ?>
