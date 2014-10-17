@@ -9,7 +9,7 @@ if(!empty($_POST['username'])) {
     <head>
 
         <meta charset="utf-8">
-        <title>Cody | Home</title>
+        <title>Cody | Registreren</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,300,100,100italic,300italic,400italic,700,700italic">
@@ -31,10 +31,16 @@ if(!empty($_POST['username'])) {
 							<h1>Registreren</h1>
                             <p>Vul onderstaand formulier in om te registreren.</p>
                                 <form action="registertest.php" method="POST">
-                               <p>Gebruikersnaam: </p><input type="text" name="username"><br>
+                               <p>Gebruikersnaam: </p><input type="text" name="username" style="display: inline-block;"><br>
                                <p>Wachtwoord: </p><input type="password" name="password"><br>   
-<button class="btn" input type="submit"></button><br>
+                                <button class="btn" input type="submit"></button><br>
 </form>
+
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <script src="assets/js/jquery-1.10.2.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>

@@ -654,3 +654,7 @@ footer {
 .footer-social {
 	text-align: right;
 }
+
+.span12 {
+    display: inline-block;
+}
