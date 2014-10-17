@@ -29,10 +29,11 @@ if(!empty($_POST['username'])) {
                     <div class="row">
                         <div class="span12">
 							<h1>Registreren</h1>
-<form action="registertest.php" method="POST">
-<input type="text" name="username"><br>
-<input type="password" name="password"><br>
-<input type="submit"><br>
+                            <p>Vul onderstaand formulier in om te registreren.</p>
+                                <form action="registertest.php" method="POST">
+                               <p>Gebruikersnaam: </p><input type="text" name="username"><br>
+                               <p>Wachtwoord: </p><input type="password" name="password"><br>   
+<button class="btn" input type="submit"></button><br>
 </form>
 
 <script src="assets/js/jquery-1.10.2.min.js"></script>
