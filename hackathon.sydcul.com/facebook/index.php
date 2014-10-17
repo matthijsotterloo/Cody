@@ -27,8 +27,8 @@ session_start();
 <div><a href="logout.php">Logout</a></div>
 
 <?php
-include('../libraries/base.inc.php');
-include('../libraries/login.inc.php');
+require('../libraries/base.inc.php');
+require('../libraries/login.inc.php');
 if(!empty($_POST['username'])) {
 	register($_SESSION['FBID'], 'facebook', 'noreply@facebook.com');
 }
