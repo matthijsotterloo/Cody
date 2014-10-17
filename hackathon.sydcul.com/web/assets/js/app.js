@@ -12,10 +12,6 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: '/partials/index.html',
             controller: 'DefaultController'
         })
-        .when('/game/draw', {
-            templateUrl: '/partials/game/draw.html',
-            controller: 'GameStartController'
-        })
         .otherwise({
             template: 'Not found!'
         });
@@ -24,13 +20,6 @@ app.config(['$routeProvider', function ($routeProvider) {
 app.controller('DefaultController', [
     '$scope',
     '$http',
-    function($scope, $http) {
-}]);
-
-app.controller('GameDrawController', [
-    '$scope',
-    '$http',
-    function($scope, $http) {
-    
-    document.getElementById('sketch').toDataURL();
-}]);
+    '$location',
+    function($scope, $http, $location) {
+}])
