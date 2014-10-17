@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="nl">
+<html class="no-js" lang="nl" ng-app="app">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,10 +36,15 @@
         </header>
                 
         <main>
-            <div class="uk-container uk-container-center">
-                {% block content %}
-                {% endblock %}
-            </div>
+            <ng-view>
+            </ng-view>
         </main>
+        
+        <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="/bower_components/uikit/js/uikit.min.js"></script>
+        <script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="/bower_components/angular-route/angular-route.min.js"></script>
+        <script type="text/javascript" src="/assets/js/sketch.js"></script>
+        <script type="text/javascript" src="/assets/js/app.js"></script>
     </body>
 </html>
