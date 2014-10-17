@@ -7,7 +7,7 @@ if(empty($_SESSION['FBID'])) {
 	die();
 }
 
-register($_SESSION['FBID'], 'facebook', null);
+register($_SESSION['FBID'], 'facebook', 'facebook');
 header('Location: http://hackathon.sydcul.com/');
 die();
 ?>
