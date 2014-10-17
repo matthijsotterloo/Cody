@@ -17,7 +17,12 @@
     </head>
 
     <body>
-		
+		<ul class="nav nav-pills">
+  <li class="active"><a href="index.php">Home</a></li>
+  <li><a href="over.php">Over Cody</a></li>
+  <li><a href="levels.php">Levels</a></li>
+</ul>
+
         <div class="coming-soon">
             <div class="inner-bg">
                 <div class="container">

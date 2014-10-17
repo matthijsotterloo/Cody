@@ -658,3 +658,9 @@ footer {
 .span12 {
     display: inline-block;
 }
+.align-center {
+    text-align: center;
+}
+.align-right {
+    text-align: right;
+}
