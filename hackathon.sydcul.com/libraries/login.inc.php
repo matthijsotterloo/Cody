@@ -88,7 +88,7 @@ function logout($userid = null) {
 	}
 }
 
-function register($username, $password) {
+function register($username, $password, $email) {
 	//Registreert een gebruikersnaam. Op het moment geen verificatie.
 	global $mysqli;
 	if ($stmt = $mysqli->prepare('SELECT id FROM users WHERE username=?')) {
@@ -115,8 +115,8 @@ function register($username, $password) {
 	
 	$hash = md5($password);
 	
-	if ($stmt = $mysqli->prepare('INSERT INTO users (id, username, password) VALUES (?, ?, ?)')) {
-		$stmt->bind_param('iss', $userid, $username, $hash);
+	if ($stmt = $mysqli->prepare('INSERT INTO users (id, username, password, email) VALUES (?, ?, ?, ?)')) {
+		$stmt->bind_param('isss', $userid, $username, $hash, $email);
 		$stmt->execute();
 		$stmt->fetch();
 		$stmt->close();
