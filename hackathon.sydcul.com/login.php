@@ -2,7 +2,7 @@
     <head>
 
         <meta charset="utf-8">
-        <title>Cody | Home</title>
+        <title>Cody | Login</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,300,100,100italic,300italic,400italic,700,700italic">
@@ -21,21 +21,21 @@
                 <div class="container">
                     <div class="row">
                         <div class="span12">
-                            <div class="logo">
-                                <img src="/branding/logo.svg"></img>
-                            </div>
                             <h2>Hey, ik ben Cody,</h2>
                             <p>
-                              Leuk dat je geinteresseerd bent in programmeren! <br>
-                              Vandaag ga ik jou dat leren! </br>
+                              Ik zit in groep 8 en houd van coden.<br>
+                              Jij bent hier om ook te leren coden.<br>
                               <br>
-                              Waar wacht je nog op? <br>
                               <br>
-                            <a href="http://hackathon.sydcul.com/start.php" target="_blank"><button type="submit" class="btn">&nbsp;Ga mee met Cody &nbsp;</button></a>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
+                              Dagelijks gebruik jij dingen die geprogrammeerd zijn, denk aan: Snapchat, Twitter, Instagram, Facebook.</p>
+                              <br>
+                              <br>
+                              <a href="http://hackathon.sydcul.com/start.php" target="_blank"><button type="submit" class="btn">&nbsp;Ga mee met Cody &nbsp;</button>
+
+                                <br>
+                                <br>
+                                <br>
+                                <br>
 
                             </div>
                         </div>
