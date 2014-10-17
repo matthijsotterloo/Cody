@@ -1,4 +1,6 @@
 <?php
+require('../libraries/base.inc.php');
+require('../libraries/login.inc.php');
 session_start(); 
 ?>
 <!doctype html>
@@ -27,12 +29,7 @@ session_start();
 <div><a href="logout.php">Logout</a></div>
 
 <?php
-require('../libraries/base.inc.php');
-require('../libraries/login.inc.php');
-if(!empty($_POST['username'])) {
-	register($_SESSION['FBID'], 'facebook', 'noreply@facebook.com');
-}
-echo('swag' . $_SESSION['FBID']);
+register($_SESSION['FBID'], 'facebook', null);
 ?>
 
 </ul></div></div>
