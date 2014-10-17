@@ -1,0 +1,38 @@
+# Cache and logs (Symfony2)
+hackathon.sydcul.com/app/cache/*
+hackathon.sydcul.com/app/logs/*
+!hackathon.sydcul.com/app/cache/.gitkeep
+!hackathon.sydcul.com/app/logs/.gitkeep
+
+# Cache and logs (Symfony3)
+hackathon.sydcul.com/var/cache/*
+hackathon.sydcul.com/var/logs/*
+!hackathon.sydcul.com/var/cache/.gitkeep
+!hackathon.sydcul.com/var/logs/.gitkeep
+
+# Parameters
+hackathon.sydcul.com/app/config/parameters.yml
+hackathon.sydcul.com/app/config/parameters.ini
+
+# Managed by Composer
+hackathon.sydcul.com/app/bootstrap.php.cache
+hackathon.sydcul.com/var/bootstrap.php.cache
+hackathon.sydcul.com/bin/*
+!hackathon.sydcul.com/bin/console
+!hackathon.sydcul.com/bin/symfony_requirements
+hackathon.sydcul.com/vendor/
+
+# Assets and user uploads
+hackathon.sydcul.com/web/bundles/
+hackathon.sydcul.com/web/uploads/
+
+# PHPUnit
+hackathon.sydcul.com//app/phpunit.xml
+hackathon.sydcul.com//phpunit.xml
+
+# Composer PHAR
+hackathon.sydcul.com/composer.phar
+
+hackathon.sydcul.com//web/bower_components
+
+.htaccess
