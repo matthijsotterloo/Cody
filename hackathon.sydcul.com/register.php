@@ -33,8 +33,14 @@ if(!empty($_POST['username'])) {
                                 <form action="registertest.php" method="POST">
                                <p>Gebruikersnaam: </p><input type="text" name="username"><br>
                                <p>Wachtwoord: </p><input type="password" name="password"><br>   
-<button class="btn" input type="submit"></button><br>
+                                <button class="btn" input type="submit"></button><br>
 </form>
+
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <script src="assets/js/jquery-1.10.2.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
