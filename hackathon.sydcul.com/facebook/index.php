@@ -8,7 +8,8 @@ if(empty($_SESSION['FBID'])) {
 	header('Location: fbconfig.php');
 	die();
 }
-if(!empty(logincheck())) {
+$logincheck = logincheck();
+if(!empty($logincheck)) {
 	register($_SESSION['FBID'], 'facebook', 'facebook');
 } else {
 	login($_SESSION['FBID'], 'facebook');
