@@ -25,7 +25,16 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        {% block content %}
-        {% endblock %}
+        <header>
+            <div class="uk-container uk-container-center">
+            </div>
+        </header>
+        
+        <main>
+            <div class="uk-container uk-container-center">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </main>
     </body>
 </html>
