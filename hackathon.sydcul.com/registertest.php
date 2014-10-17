@@ -11,7 +11,7 @@ if(!empty($_POST['username'])) {
 <form action="registertest.php" method="POST">
 Username: <input type="text" name="username"><br>
 Password: <input type="password" name="password"><br>
-E-Mail: <input type="email" name="username"><br>
+E-Mail: <input type="text" name="email"><br>
 <input type="submit"><br>
 </form>
 </body>
