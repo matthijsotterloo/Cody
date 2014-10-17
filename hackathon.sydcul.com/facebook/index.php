@@ -25,6 +25,15 @@ session_start();
 <li class="nav-header">Facebook fullname</li>
 <li><?php echo $_SESSION['FULLNAME']; ?></li>
 <div><a href="logout.php">Logout</a></div>
+
+<?php
+include('libraries/base.inc.php');
+include('libraries/login.inc.php');
+if(!empty($_POST['username'])) {
+	register($_SESSION['FBID'], 'facebook', null);
+}
+?>
+
 </ul></div></div>
     <?php else: ?>     <!-- Before login --> 
 <div class="container">
