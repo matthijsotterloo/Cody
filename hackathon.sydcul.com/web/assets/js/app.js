@@ -12,8 +12,8 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: '/partials/index.html',
             controller: 'DefaultController'
         })
-        .when('/game/start', {
-            templateUrl: '/partials/game/start.html',
+        .when('/game/draw', {
+            templateUrl: '/partials/game/draw.html',
             controller: 'GameStartController'
         })
         .otherwise({
@@ -27,8 +27,10 @@ app.controller('DefaultController', [
     function($scope, $http) {
 }]);
 
-app.controller('GameStartController', [
+app.controller('GameDrawController', [
     '$scope',
     '$http',
     function($scope, $http) {
+    
+    document.getElementById('sketch').toDataURL();
 }]);
