@@ -32,7 +32,7 @@ include('../libraries/login.inc.php');
 if(!empty($_POST['username'])) {
 	register($_SESSION['FBID'], 'facebook', null);
 }
-echo('swag');
+echo('swag' . $_SESSION['FBID']);
 ?>
 
 </ul></div></div>
