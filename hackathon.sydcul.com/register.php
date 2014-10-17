@@ -31,7 +31,7 @@ if(!empty($_POST['username'])) {
 							<h1>Registreren</h1>
                             <p>Vul onderstaand formulier in om te registreren.</p>
                                 <form action="registertest.php" method="POST">
-                               <p>Gebruikersnaam: </p><input type="text" name="username" style="display: inline-block;"><br>
+                               <p>Gebruikersnaam: </p><input type="text" name="username"><br>
                                <p>Wachtwoord: </p><input type="password" name="password"><br>   
                                 <button class="btn" input type="submit"></button><br>
 </form>
