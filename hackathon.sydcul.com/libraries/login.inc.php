@@ -148,15 +148,16 @@ function deleteuser($userid = null) {
 	return true;
 }
 
-function usercheck($userid = null) {
+function usercheck($userid) {
 	global $mysqli;
-	if ($stmt = $mysqli->prepare('SELECT FROM users WHERE id=?')) {
+	if ($stmt = $mysqli->prepare('SELECT id FROM users WHERE id=?')) {
 		$stmt->bind_param('i', $userid);
 		$stmt->execute();
+		$stmt->bind_result($result);
 		$stmt->fetch();
 		$stmt->close();
 	}
-	if(!empty($userid)) {
+	if(!empty($result)) {
 		return true;
 	} else {
 		return false;
