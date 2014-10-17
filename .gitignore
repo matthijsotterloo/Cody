@@ -33,6 +33,4 @@ hackathon.sydcul.com//phpunit.xml
 # Composer PHAR
 hackathon.sydcul.com/composer.phar
 
-hackathon.sydcul.com/web/bower_components/*
-
 .htaccess
