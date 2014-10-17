@@ -1,9 +1,8 @@
 $(document).ready(function(){
 	$(function() {
 		$( "#zoom" ).slider();
-	  });
-  
-$('#workspace').draggable();
+	});
+	$('#workspace').draggable({ axis: 'x' });
 $sliderValue="";
 $("#slider").slider({                   
                 value: 1,
