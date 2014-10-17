@@ -7,18 +7,16 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        {% if app.debug %}
-            <link rel="stylesheet/less" type="text/css" href="/assets/less/main.less">
-            
-            <script>
-            less = {
-                env: "development",
-                logLevel: 2
-            };
-            </script>
-            <script src="/bower_components/less/dist/less-1.7.5.min.js" type="text/javascript"></script>
-            <script>less.watch();</script>
-        {% endif %}
+        <link rel="stylesheet/less" type="text/css" href="/assets/less/main.less">
+        
+        <script>
+        less = {
+            env: "development",
+            logLevel: 2
+        };
+        </script>
+        <script src="/bower_components/less/dist/less-1.7.5.min.js" type="text/javascript"></script>
+        <script>less.watch();</script>
     </head>
     <body>
         <!--[if lt IE 9]>

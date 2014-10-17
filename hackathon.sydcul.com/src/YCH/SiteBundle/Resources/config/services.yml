@@ -1,4 +1,0 @@
-services:
-#    ych_site.example:
-#        class: YCH\SiteBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]

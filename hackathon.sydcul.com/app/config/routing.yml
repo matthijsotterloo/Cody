@@ -1,3 +1,0 @@
-ych_site:
-    resource: "@YCHSiteBundle/Controller/"
-    type:     annotation
