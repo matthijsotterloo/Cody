@@ -206,7 +206,7 @@
                     return;
 				} else {
 				    $.UIkit.notify('Please try again!');
-				    clearUserChoices();
+				    window.setInterval("clearUserChoices()", 1000);
                     return;
 				}
             }

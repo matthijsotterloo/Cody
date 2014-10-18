@@ -165,7 +165,7 @@
         </div>
         
         <div id="opener" onclick="opener();"><i class="uk-icon-info"></i></div>
-        <div id="code-area">&nbsp;</div>
+        <div id="code-area">&nbsp;<center><img src="http://hackathon.sydcul.com/branding/Cody.svg" width="200px" style="padding:20px;"/><br>This one's very similar to the previous one, but just be sure not to give the wrong stuff to the customers!</center></div>
         
         <script type="text/javascript" src="bower_components/uikit/js/uikit.min.js"></script>
         <script type="text/javascript" src="bower_components/uikit/js/components/notify.min.js"></script>
@@ -206,7 +206,7 @@
                     return;
 				} else {
 				    $.UIkit.notify('Please try again!');
-				    clearUserChoices();
+				    window.setInterval("clearUserChoices()", 1000);
                     return;
 				}
             }

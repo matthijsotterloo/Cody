@@ -165,7 +165,7 @@
         </div>
         
         <div id="opener" onclick="opener();"><i class="uk-icon-info"></i></div>
-        <div id="code-area">&nbsp;</div>
+        <div id="code-area">&nbsp;<center><img src="http://hackathon.sydcul.com/branding/Cody.svg" width="200px" style="padding:20px;"/><br>You're on your own for this one!</center></div>
         
         <script type="text/javascript" src="bower_components/uikit/js/uikit.min.js"></script>
         <script type="text/javascript" src="bower_components/uikit/js/components/notify.min.js"></script>
@@ -196,25 +196,25 @@
                 
                 if (userChoices['output'] !== null && userChoices['output']['item'] !== 'bicycle') {
                     $.UIkit.notify('This program should end with the bicycle at 10 meter distance!');
-                    clearUserChoices();
+                    window.setInterval("clearUserChoices()", 1000);
                     return;
                 }
                 
                 if (userChoices['input'] !== null && userChoices['input']['item'] !== 'bicycle') {
                     $.UIkit.notify('This program should start with the bicycle at 60 meter distance!');
-                    clearUserChoices();
+                    window.setInterval("clearUserChoices()", 1000);
                     return;
                 }
                 
                 if (userChoices['expression'] !== null && userChoices['expression']['item'] !== 'break') {
                     $.UIkit.notify('You should break!');
-                    clearUserChoices();
+                    window.setInterval("clearUserChoices()", 1000);
                     return;
                 }
                 
                 if (userChoices['expression']['input'] < 2) {
                     $.UIkit.notify('You break too late!');
-                    clearUserChoices();
+                    window.setInterval("clearUserChoices()", 1000);
                     return;
                 } else {
 				    $.UIkit.notify('Good work! You stopped on time!');
