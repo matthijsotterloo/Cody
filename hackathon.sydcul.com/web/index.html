@@ -1,0 +1,129 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="codeApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet/less" type="text/css" href="assets/less/main.less">
+        
+        <script>
+        less = {
+            env: "development",
+            logLevel: 2
+        };
+        </script>
+        <script src="bower_components/less/dist/less-1.7.5.min.js" type="text/javascript"></script>
+        <script>less.watch();</script>
+    </head>
+    <body ng-controller="GameController">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <header>
+            <div class="uk-container uk-container-center uk-clearfix">
+                <div class="uk-float-left">
+                    <h2>Code</h2>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <div class="uk-container uk-container-center">
+                <div class="uk-grid">
+                    <div class="uk-width-1-3">
+                        <div id="placeholder_1" class="uk-placeholder" ondrop="handleDrop(event)" ondragover="allowDrop(event)">
+                            <div></div>
+                        </div>
+                    </div>
+                    
+                    <div class="uk-width-1-3">
+                        <div id="placeholder_2" class="uk-placeholder" ondrop="handleDrop(event)" ondragover="allowDrop(event)">
+                            <div></div>
+                        </div>
+                    </div>
+                    
+                    <div class="uk-width-1-3">
+                        <div id="placeholder_3" class="uk-placeholder" ondrop="handleDrop(event)" ondragover="allowDrop(event)">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <div class="catalog">
+            <div class="catalog-header">
+                <div class="uk-container uk-container-center">
+                    <h2>Catalogus</h2>
+                </div>
+            </div>
+            <div class="catalog-content">
+                <div class="uk-container uk-container-center">
+                    <div class="uk-grid">
+                        <div class="uk-width-1-5">
+                            <div class="item-outer">
+                                <a class="item" draggable="true" ondragstart="handleDrag(event)">
+                                    <i class="uk-icon-lightbulb-o uk-icon-large"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-5">
+                            <div class="item-outer">
+                                <a class="item" draggable="true" ondragstart="handleDrag(event)">
+                                    <i class="uk-icon-lightbulb-o uk-icon-large"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-5">
+                            <div class="item-outer">
+                                <a class="item" draggable="true" ondragstart="handleDrag(event)">
+                                    <i class="uk-icon-lightbulb-o uk-icon-large"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-5">
+                            <div class="item-outer">
+                                <a class="item" draggable="true" ondragstart="handleDrag(event)">
+                                    <i class="uk-icon-lightbulb-o uk-icon-large"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-5">
+                            <div class="item-outer">
+                                <a class="item" draggable="true" ondragstart="handleDrag(event)">
+                                    <i class="uk-icon-lightbulb-o uk-icon-large"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="bower_components/uikit/js/uikit.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+        
+        <script type="text/javascript" src="assets/js/app.js"></script>
+        
+        <script type="text/javascript">
+            function allowDrop(event) {
+                event.preventDefault();
+            }
+        
+            function handleDrag(event) {
+                event.dataTransfer.setData("text/html", event.target.innerHTML);
+            }
+        
+            function handleDrop(event) {
+                event.preventDefault();
+                event.target.innerHTML = event.dataTransfer.getData("text/html");
+            }
+        </script>
+    </body>
+</html>
