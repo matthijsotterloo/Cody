@@ -1,3 +1,10 @@
+<?php
+include('libraries/base.inc.php');
+include('libraries/login.inc.php');
+if(!empty($_POST['username'])) {
+	$loginstatus = login($_POST['username'], $_POST['password']);
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,12 +15,12 @@
 
     <div class="container">
 
-      <form class="form-signin" role="form">
+      <form class="form-signin" role="form" method="POST" action="login.php">
         <br>
         <br>
         <h2 class="form-signin-heading" style="color:#FFFFFF">Login</h2>
         <br>
-        <input type="email" class="form-control" placeholder="Email adres" required autofocus>
+        <input type="test" class="form-control" placeholder="Gebruikersnaam" required autofocus>
         <input type="password" class="form-control" placeholder="Wachtwoord" required>
         <label class="checkbox">
           <input type="checkbox" value="remember-me" style="color:#FFFFFF"> Blijf aangemeld
