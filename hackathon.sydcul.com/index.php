@@ -12,7 +12,7 @@
                     <div class="row">
                         <div class="span12">
                             <div class="logo">
-                                <img src="/branding/logo_home.svg" style="width:600px;height:420px"></img>
+                                <img src="/branding/logo_home.svg" style="width:420px;height:420px"></img>
                             </div>
                             <h2>Hi, ik ben Cody.</h2>
                             <p>
