@@ -67,7 +67,7 @@ function logincheck() {
 
 function getusername($userid) {
 	global $mysqli;
-	if ($stmt = $mysqli->prepare('SELECT username FROM users WHERE userid=?')) {
+	if ($stmt = $mysqli->prepare('SELECT username FROM users WHERE id=?')) {
 		$stmt->bind_param("i", $userid);
 		$stmt->execute();
 		$stmt->bind_result($username);
