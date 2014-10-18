@@ -55,7 +55,7 @@
         <div class="stripe">
             <div class="uk-container uk-container-center uk-clearfix">
                 <div class="uk-float-left">
-                    <h3>The car is driving at 15 m/s, the car notices a bicycle at 60 meter distance and needs to break</h3>
+                    <h3>The car is driving at 10 m/s, the car notices a bicycle at 60 meter distance and needs to break</h3>
                 </div>
                 <div class="uk-float-right">
                     <a href="#" class="uk-button uk-button-large uk-button-primary">Ga verder</a>
@@ -103,7 +103,7 @@
                             <div class="item-outer">
                                 <a id="bicycle" class="item" draggable="true" ondragstart="handleDrag(event)">
                                     <i class="uk-icon-bicycle uk-icon-large"></i><br>
-                                    <span>Bicycle<br>60 m</span>
+                                    <span>Bicycle<br>60 m distance</span>
                                 </a>
                             </div>
                         </div>
@@ -137,9 +137,9 @@
                         
                         <div class="uk-width-1-5">
                             <div class="item-outer">
-                                <a id="car" class="item" draggable="true" ondragstart="handleDrag(event)">
-                                    <i class="uk-icon-car uk-icon-large"></i><br>
-                                    <span>Car</span>
+                                <a id="bicycle" class="item" draggable="true" ondragstart="handleDrag(event)">
+                                    <i class="uk-icon-bicycle uk-icon-large"></i><br>
+                                    <span>Bicycle<br>10 m distance</span>
                                 </a>
                             </div>
                         </div>
@@ -194,23 +194,30 @@
                     return;
                 }
                 
-                if (userChoices['output'] !== null && userChoices['output']['item'] !== 'lightbulb') {
-                    $.UIkit.notify('That is not a lightbulb!');
+                if (userChoices['output'] !== null && userChoices['output']['item'] !== 'bicycle') {
+                    $.UIkit.notify('This program should end with the bicycle at 10 meter distance!');
                     clearUserChoices();
                     return;
                 }
                 
-                if (userChoices['expression']['item'] == 'gt' && userChoices['input']['input'] > userChoices['expression']['input']) {
-                    $.UIkit.notify('That is correct!');
+                if (userChoices['input'] !== null && userChoices['input']['item'] !== 'bicycle') {
+                    $.UIkit.notify('This program should start with the bicycle at 60 meter distance!');
+                    clearUserChoices();
                     return;
-                    
-				} else if (userChoices['expression']['item'] == 'lt' && userChoices['input']['input'] < userChoices['expression']['input']) {
-				    $.UIkit.notify('That is correct!');
+                }
+                
+                if (userChoices['expression'] !== null && userChoices['expression']['item'] !== 'break') {
+                    $.UIkit.notify('You should break!');
+                    clearUserChoices();
                     return;
-                    
-				} else {
-				    $.UIkit.notify('Please try again!');
-				    clearUserChoices();
+                }
+                
+                if (userChoices['expression']['input'] < 2) {
+                    $.UIkit.notify('You break too late!');
+                    clearUserChoices();
+                    return;
+                } else {
+				    $.UIkit.notify('Good work! You stopped on time!');
                     return;
 				}
             }
@@ -246,7 +253,7 @@
                 var type = event.target.id;
                 var item = event.dataTransfer.getData("Text");
                                       
-                if (item == 'keyboard' || item == 'gt' || item == 'lt') {
+                if (item == 'break') {
                     var input = window.prompt("Input:", "");
                 
                     while (event.target.hasChildNodes()) {
