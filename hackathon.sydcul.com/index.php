@@ -17,12 +17,6 @@
     </head>
 
     <body>
-		<ul class="nav nav-pills">
-            <p style="color:#FFFFFF">Ik weet het de align is niet goed. Als je niks te doen hebt fix het. MAAR BLIJF MET JE POTEN VAN DE REST AF!</p>
-            <li class="active"><a href="index.php">Home</a></li>
-            <li class="disabled"><a href="">Over Cody</a></li>
-            <li class="disabled"><a href="">Levels</a></li>
-        </ul>
 
         <div class="coming-soon">
             <div class="inner-bg">
@@ -30,7 +24,7 @@
                     <div class="row">
                         <div class="span12">
                             <div class="logo">
-                                <img src="/branding/logo.svg"></img>
+                                <img src="/branding/logo.svg" style="width:320px;height:228px"></img>
                             </div>
                             <h2>Hey, ik ben Cody,</h2>
                             <p>
