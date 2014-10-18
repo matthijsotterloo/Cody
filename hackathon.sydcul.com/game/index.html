@@ -178,7 +178,13 @@
                     return;
                 }
                 
-                
+                if(userChoices['expression']['item'] == 'gt' && userChoices['expression']['input'] > userChoices['input']['input']) { //Expression is meer dan input
+					console.log('Goed zo! (GT)');
+				} else if(userChoices['expression']['item'] == 'lt' && userChoices['expression']['input'] < userChoices['input']['input']) { //Expression is minder dan input
+					console.log('Goed zo! (LT)');
+				} else {
+					console.log('DENIED!');
+				}
             }
         
             function handleDrop(event) {
