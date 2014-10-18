@@ -26,7 +26,7 @@
                         </a></a>
 
                             <br>
-                            <p>Heb je geen Facebook account? Klik dan <a href="register.php" target="_blank">hier</a>
+                            <p>Heb je geen Facebook account? Klik dan <a href="registertest.php" target="_blank">hier</a>
 
                         
                             <br>
