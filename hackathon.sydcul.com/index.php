@@ -14,7 +14,6 @@
                             <div class="logo">
                                 <img src="/branding/logo_home.svg" style="width:420px;height:420px"></img>
                             </div>
-                            <h2>Hallo, ik ben Cody.</h2>
                             <p>
                               Leuk dat je op mijn website komt om te leren programmeren!<br>
                               Programmeren is makkelijk en leuk. </br>
