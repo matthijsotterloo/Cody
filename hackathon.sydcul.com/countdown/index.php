@@ -76,6 +76,9 @@ opacity: .7;
 </style>
 <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 </head>
+<?php
+putenv("TZ=Europe/Amsterdam");
+?>
 <body>
 </div>
 <div class="jquery-script-clear"></div>
