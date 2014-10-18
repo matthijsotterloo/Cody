@@ -23,6 +23,10 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
 			<li><?php
+			<?php
+			include('libraries/base.inc.php');
+			include('libraries/login.inc.php');
+			
 			$userid = logincheck();
 			if(!empty()) {
 				echo('Ingelogd als ' . getusername($userid));
