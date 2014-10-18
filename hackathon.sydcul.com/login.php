@@ -2,39 +2,24 @@
 include('libraries/base.inc.php');
 include('libraries/login.inc.php');
 if(!empty($_POST['username'])) {
-	login($_POST['username'], $_POST['password']);
+	$loginstatus = login($_POST['username'], $_POST['password']);
+}
+if(!empty($_POST['logout'])) {
+	logout();
 }
 ?>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Cody | Login</title>
-    <?php include 'header.php';?>
-
-  <body>
-
-    <div class="container">
-
-      <form class="form-signin" role="form" method="POST" action="login.php">
-        <br>
-        <br>
-        <h2 class="form-signin-heading" style="color:#FFFFFF">Login</h2>
-        <br>
-        <input type="test" class="form-control" placeholder="Gebruikersnaam" required autofocus>
-        <input type="password" class="form-control" placeholder="Wachtwoord" required>
-        <label class="checkbox">
-          <input type="checkbox" value="remember-me" style="color:#FFFFFF"> Blijf aangemeld
-        </label>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Aanmelden</button>
-      </form>
-
-    </div> <!-- /container -->
-
-            <script src="assets/js/jquery-1.10.2.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <script src="assets/js/jquery.backstretch.min.js"></script>
-        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-        <script src="assets/js/jquery.ui.map.min.js"></script>
-        <script src="assets/js/scripts.js"></script>
-  </body>
+<html>
+<body>
+<h1>Inloggen</h1>
+<form action="logintest.php" method="POST">
+<input type="text" name="username"><br>
+<input type="password" name="password"><br>
+<input type="submit"><br>
+</form>
+Ingelogd: <?php var_dump(logincheck()); ?><br>
+<form method="POST" action="logintest.php">
+<input type="hidden" name="logout" value="1">
+<input type="submit" value="Uitloggen">
+</form>
+</body>
 </html>
