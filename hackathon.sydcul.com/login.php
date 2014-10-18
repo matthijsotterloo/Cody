@@ -9,8 +9,13 @@ if(!empty($_POST['logout'])) {
 }
 ?>
 <html>
-<body>
-<h1>Inloggen</h1>
+    <head>
+
+        <meta charset="utf-8">
+        <title>Cody | Login</title>
+
+        <?php include 'header.php';?>
+<h1 style="color:#FFF">Inloggen</h1>
 <form action="logintest.php" method="POST">
 <input type="text" name="username"><br>
 <input type="password" name="password"><br>
