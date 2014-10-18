@@ -21,8 +21,8 @@
                               <br>
                               Heb je al een facebook account? <br>
                               <br>
-                            <a class="btn btn-block btn-social btn-facebook">
-                                <a href="/facebook"><i class="fa fa-facebook"></i> Inloggen met Facebook</a>
+                            <a class="btn btn-block btn-social btn-facebook" href="/facebook/">
+                                <i class="fa fa-facebook"></i> Inloggen met Facebook</a>
                             </a>
 
                             <br>
