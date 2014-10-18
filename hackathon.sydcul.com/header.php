@@ -25,8 +25,8 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="index.php">Home</a></li>
-            <li><a href="about.php">Over Cody</a></li>
-            <li><a href="work.php">Levels</a></li>
+            <li><a href="over.php">Over Cody</a></li>
+            <li><a href="levels.php">Levels</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
