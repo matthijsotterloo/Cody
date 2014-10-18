@@ -25,7 +25,7 @@
                         </a></a>
 
                             <br>
-                            <p>Haven't got a Facebook account? Click<a href="register.php" target="_blank">here</a>
+                            <p>Haven't got a Facebook account? Click <a href="register.php" target="_blank">here</a>.
 
                         
                             <br>
