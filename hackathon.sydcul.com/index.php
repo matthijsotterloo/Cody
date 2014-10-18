@@ -16,14 +16,13 @@
                             </div>
                             <h2>Hey, ik ben Cody,</h2>
                             <p>
-                              Leuk dat je geinteresseerd bent in programmeren! <br>
-                              Vandaag ga ik jou dat leren! </br>
-							  Of je dat nou wilt of niet! Je moet wel! Je houdt toch van je familie? <br>
+                              Wat leuk dat jij ook wil leren programmeren!<br>
+                              Daar ga ik jou mee helpen. </br>
                               <br>
-                              Waar wacht je nog op? <br>
+                              Heb je al een facebook account? <br>
                               <br>
                             <a class="btn btn-block btn-social btn-facebook">
-                                <i class="fa fa-facebook"></i> Inloggen met Facebook
+                                <a href="/facebook"><i class="fa fa-facebook"></i> Inloggen met Facebook</a>
                             </a>
 
                             <br>

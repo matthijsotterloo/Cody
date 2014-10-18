@@ -4,9 +4,7 @@
         <link rel="stylesheet" href="assets/css/form-elements.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/media-queries.css">
-        <link rel="stylesheet" href="assets/css/bootstrap-social.css">
-        <link href="assets/css/docs.css" rel="stylesheet" >
- 
+        <link rel="stylesheet" href="assets/css/bootstrap-social.css"> 
     </head>
 
     <body>
