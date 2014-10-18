@@ -12,7 +12,7 @@
                     <div class="row">
                         <div class="span12">
                             <img src="/branding/Cody.svg"  width="300" height="214"></img>
-                            <h2>Hi, I'm code.</h2>
+                            <h2>Hi, I'm Cody.</h2>
                             <p>
                               I'm in 6th grade and I live in Hilversum.<br>
                               I'm here to help you how to learn to code.<br>
@@ -21,7 +21,7 @@
                               A lot of things in everyday life have been programmed at one point. And with me, you are going to be able to code things yourself!</p>
                               <br>
                               <br>
-                              <a href="http://hackathon.sydcul.com/start.php" target="_blank"><button type="submit" class="btn">&nbsp;Hop in with Cody!! &nbsp;</button>
+                              <a href="http://hackathon.sydcul.com/game/index.html" target="_blank"><button type="submit" class="btn">&nbsp;Hop in with Cody!! &nbsp;</button>
 
                                 <br>
                                 <br>
