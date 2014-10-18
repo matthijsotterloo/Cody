@@ -35,6 +35,8 @@
                     <li>Laat het poppetje bewegen</li>
                 </ul>
             </div>
+            
+            <a href="/web"><button class="btn">&nbsp;Begin met level 1 &nbsp;</button></a>
 
         </div>
 
