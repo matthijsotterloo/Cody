@@ -18,21 +18,21 @@
         <div class="row">
             <div class="col-md-6 portfolio-item">
                 <a href="#">
-                    <img class="img-responsive" src="assets/img/level1.jpg" alt="">
+                    <img class="img-responsive" src="assets/img/level_1.jpg" alt="">
                 </a>
                 <h3>
                     <a href="level_1.php" target="_blank">Level 1</a>
                 </h3>
-                 <a href="/web"><p style="color:#FFFFFF">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p></a>
+                 <a href="level_1.php"><p style="color:#FFFFFF">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p></a>
             </div>
             <div class="col-md-6 portfolio-item">
                 <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                    <a href="level_2.php"><img class="img-responsive" src="http://placehold.it/700x400" alt="">
                 </a>
                 <h3>
                     <a href="level_2.php" target="_blank">Level 2</a>
                 </h3>
-                 <a href="/web"><p style="color:#FFFFFF">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p></a>
+                 <a href="level_2.php"><p style="color:#FFFFFF">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p></a>
             </div>
         </div>
         </div>
