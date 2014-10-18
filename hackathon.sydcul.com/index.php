@@ -22,7 +22,7 @@
                               Heb je al een Facebook account? <br>
                               <br>
 
-                            <a class="btn btn-block btn-social btn-lg btn-facebook" href="/facebook" targe="_blank"><i class="fa fa-facebook"></i>&nbsp;&nbsp;&nbsp;Inloggen met Facebook</a>
+                            <a class="btn btn-block btn-social btn-lg btn-facebook" href="/facebook" targe="_blank"><i class="fa fa-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inloggen met Facebook</a>
                         </a></a>
 
                             <br>
