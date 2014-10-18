@@ -35,7 +35,7 @@
 			?></li>
             <li><a href="/">Home</a></li>
             <li><a href="about.php">About Cody</a></li>
-            <li><a href="/game/index1.html">Level 1</a></li>
+            <li><a href="/game/index1.html">Spelen</a></li>
             </li>
           </ul>
         </div><!--/.nav-collapse -->
