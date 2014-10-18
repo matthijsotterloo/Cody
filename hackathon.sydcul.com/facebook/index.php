@@ -13,6 +13,7 @@ if(empty($usercheck)) {
 	register($_SESSION['FBID'], 'facebook', 'facebook');
 } else {
 	login($_SESSION['FBID'], 'facebook');
+	sleep(2);
 }
 header('Location: http://hackathon.sydcul.com/');
 die();
