@@ -22,7 +22,8 @@
 
         <div class="row">
 
-            <div class="col-md-8">
+            <a href="/web">
+                <div class="col-md-8">
                 <img class="img-responsive" src="assets/img/level1.jpg" alt="">
             </div>
 
@@ -35,8 +36,9 @@
                     <li>Laat het poppetje bewegen</li>
                 </ul>
             </div>
-            
-            <a href="/web"><button class="btn">&nbsp;Begin met level 1 &nbsp;</button></a>
+            <br>
+            <button class="btn">&nbsp;Begin met level 1 &nbsp;</button>
+            </a>
 
         </div>
 
