@@ -35,8 +35,10 @@
 			?></li>
             <li><a href="/">Home</a></li>
             <li><a href="about.php">About Cody</a></li>
-            <li><a href="/game/index1.html">Level 1</li>
-            <li><a href="/game/index2.html">Level 2</li>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
             </li>
           </ul>
         </div><!--/.nav-collapse -->
