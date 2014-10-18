@@ -66,13 +66,13 @@
             <div class="uk-container uk-container-center">
                 <div class="uk-grid">
                     <div class="uk-width-1-4">
-                        <div id="placeholder_input" class="uk-placeholder" ondrop="handleDrop(event)" ondragover="allowDrop(event)">
+                        <div id="input" class="uk-placeholder" ondrop="handleDrop(event)" ondragover="allowDrop(event)">
                             <div></div>
                         </div>
                     </div>
                     
                     <div class="uk-width-1-4">
-                        <div id="placeholder_action" class="uk-placeholder" ondrop="handleDrop(event)" ondragover="allowDrop(event)">
+                        <div id="expression" class="uk-placeholder" ondrop="handleDrop(event)" ondragover="allowDrop(event)">
                             <div></div>
                         </div>
                     </div>
@@ -84,7 +84,7 @@
                     </div>
                     
                     <div class="uk-width-1-4">
-                        <div id="placeholder_output" class="uk-placeholder" ondrop="handleDrop(event)" ondragover="allowDrop(event)">
+                        <div id="output" class="uk-placeholder" ondrop="handleDrop(event)" ondragover="allowDrop(event)">
                             <div></div>
                         </div>
                     </div>
@@ -159,6 +159,12 @@
         <script type="text/javascript" src="assets/js/app.js"></script>
         
         <script type="text/javascript">
+            var userChoices = {
+                input: null,
+                expression: null,
+                output: null
+            };
+        
             function allowDrop(event) {
                 event.preventDefault();
             }
@@ -166,21 +172,36 @@
             function handleDrag(event) {
                 event.dataTransfer.setData("Text", event.target.id);
             }
+            
+            function evaluateUserChoices() {
+                if (!userChoices.input || !userChoices.expression || !userChoices.output) {
+                    return;
+                }
+                
+                
+            }
         
             function handleDrop(event) {
                 event.preventDefault();
                 
-                var data = event.dataTransfer.getData("Text");
-                      
-                if (data == 'keyboard' || data == 'gt' || data == 'lt') {
+                var type = event.target.id;
+                var item = event.dataTransfer.getData("Text");
+                                      
+                if (item == 'keyboard' || item == 'gt' || item == 'lt') {
                     var input = window.prompt("Input:", "");
                 
                     event.target.innerHTML = '';
-                    event.target.innerHTML = document.getElementById(data).innerHTML + '<br>(' + input + ')';
+                    event.target.innerHTML = document.getElementById(item).innerHTML + '<br>(' + input + ')';
+                    
+                    userChoices[type] = { 'item': item, 'input': input };
                 } else {
                     event.target.innerHTML = '';
-                    event.target.innerHTML = document.getElementById(data).innerHTML;
+                    event.target.innerHTML = document.getElementById(item).innerHTML;
+                    
+                    userChoices[type] = { 'item': item };
                 }
+                
+                evaluateUserChoices();
             }
         </script>
     </body>
