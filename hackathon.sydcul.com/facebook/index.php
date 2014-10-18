@@ -9,7 +9,7 @@ if(empty($_SESSION['FBID'])) {
 	die();
 }
 $usercheck = usercheck($_SESSION['FBID']);
-echo $usercheck;
+var_dump($usercheck);
 if(empty($usercheck)) {
 	register($_SESSION['FBID'], 'facebook', 'facebook');
 } else {
