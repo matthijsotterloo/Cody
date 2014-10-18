@@ -16,7 +16,7 @@
         <input type="email" class="form-control" placeholder="Email adres" required autofocus>
         <input type="password" class="form-control" placeholder="Wachtwoord" required>
         <label class="checkbox">
-          <input type="checkbox" value="remember-me"> Blijf aangemeld
+          <input type="checkbox" value="remember-me" style="color:#FFFFFF"> Blijf aangemeld
         </label>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Aanmelden</button>
       </form>
