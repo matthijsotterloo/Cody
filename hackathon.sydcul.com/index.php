@@ -14,7 +14,7 @@
                             <div class="logo">
                                 <img src="/branding/logo.svg" style="width:320px;height:228px"></img>
                             </div>
-                            <h2>Hey, ik ben Cody,</h2>
+                            <h2>Hi, ik ben Cody.</h2>
                             <p>
                               Wat leuk dat jij ook wil leren programmeren!<br>
                               Daar ga ik jou mee helpen. </br>
