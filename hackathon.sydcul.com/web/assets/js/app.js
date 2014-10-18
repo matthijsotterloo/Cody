@@ -1,25 +1,9 @@
 'use strict';
 
-var app = angular.module('app', ['ngRoute']);
+var app = angular.module('codeApp', []);
 
-app.config(['$locationProvider', function ($locationProvider) {
-    $locationProvider.html5Mode(false).hashPrefix('!');
+app.controller('GameController', ['$scope', '$location', function($scope, $function) {
+    $scope.data = {};
+    
+    angular.element('.item');
 }]);
-
-app.config(['$routeProvider', function ($routeProvider) {
-    $routeProvider
-        .when('/', {
-            templateUrl: '/partials/index.html',
-            controller: 'DefaultController'
-        })
-        .otherwise({
-            template: 'Not found!'
-        });
-}]);
-
-app.controller('DefaultController', [
-    '$scope',
-    '$http',
-    '$location',
-    function($scope, $http, $location) {
-}])

@@ -25,6 +25,5 @@
   },
   "_source": "git://github.com/uikit/bower-uikit.git",
   "_target": "~2.11.1",
-  "_originalSource": "uikit",
-  "_direct": true
+  "_originalSource": "uikit"
 }

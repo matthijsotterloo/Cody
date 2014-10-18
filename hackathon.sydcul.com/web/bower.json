@@ -1,7 +1,6 @@
 {
-  "name": "ychacks",
+  "name": "bower",
   "version": "0.0.0",
-  "homepage": "https://github.com/matthijsotterloo/YCHackathon",
   "authors": [
     "Mike Pagé <mike@nedwave.com>"
   ],

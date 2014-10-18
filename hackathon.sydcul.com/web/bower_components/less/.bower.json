@@ -24,6 +24,5 @@
   },
   "_source": "git://github.com/less/less.git",
   "_target": "~1.7.5",
-  "_originalSource": "less",
-  "_direct": true
+  "_originalSource": "less"
 }
