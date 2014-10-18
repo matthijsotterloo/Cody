@@ -23,7 +23,7 @@
                 <h3>
                     <a href="level_1.php" target="_blank">Level 1</a>
                 </h3>
-                <p style="color:#FFFFFF">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                 <a href="/web"><p style="color:#FFFFFF">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p></a>
             </div>
             <div class="col-md-6 portfolio-item">
                 <a href="#">
@@ -32,7 +32,7 @@
                 <h3>
                     <a href="level_2.php" target="_blank">Level 2</a>
                 </h3>
-                <p style="color:#FFFFFF">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                 <a href="/web"><p style="color:#FFFFFF">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p></a>
             </div>
         </div>
         </div>
