@@ -17,6 +17,23 @@
         </script>
         <script src="bower_components/less/dist/less-1.7.5.min.js" type="text/javascript"></script>
         <script>less.watch();</script>
+        
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script type="text/javascript">
+        var open = false;
+        
+        function opener() {
+            if (open == false) {
+                $('#opener').animate({ right: '+=400px'});
+                $('#code-area').animate({ right: '+=400px'});
+                open = true;
+            } else {
+                $('#opener').animate({ right: '-=400px'});
+                $('#code-area').animate({ right: '-=400px'});
+                open = false;
+            }
+        }
+        </script>
     </head>
     <body ng-controller="GameController">
         <!--[if lt IE 8]>
@@ -77,7 +94,7 @@
                         <div class="uk-width-1-5">
                             <div class="item-outer">
                                 <a class="item" draggable="true" ondragstart="handleDrag(event)">
-                                    <i class="uk-icon-lightbulb-o uk-icon-large"></i>
+                                    <i class="uk-icon-arrow-right uk-icon-large"></i>
                                 </a>
                             </div>
                         </div>
@@ -107,7 +124,9 @@
             </div>
         </div>
         
-        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+        <div id="opener" onclick="opener();"><i class="uk-icon-info"></i></div>
+        <div id="code-area">&nbsp;</div>
+        
         <script type="text/javascript" src="bower_components/uikit/js/uikit.min.js"></script>
         <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
         <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
