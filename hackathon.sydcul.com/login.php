@@ -2,7 +2,7 @@
 include('libraries/base.inc.php');
 include('libraries/login.inc.php');
 if(!empty($_POST['username'])) {
-	$loginstatus = login($_POST['username'], $_POST['password']);
+	login($_POST['username'], $_POST['password']);
 }
 ?>
 <!DOCTYPE html>
