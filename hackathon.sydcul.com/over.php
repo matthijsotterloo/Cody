@@ -11,7 +11,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="span12">
-                            <img src="/branding/cody.svg"  width="300" height="214"></img>
+                            <img src="/branding/Cody.svg"  width="300" height="214"></img>
                             <h2>Hallo, ik ben Cody.</h2>
                             <p>
                               Ik zit in Groep 8 van de Code School in Hilversum.<br>
