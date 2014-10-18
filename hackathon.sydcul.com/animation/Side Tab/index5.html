@@ -1,0 +1,50 @@
+<!doctype html>
+
+<head>
+
+	<link rel="stylesheet" href="styles.css" />
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/ui/1.8.18/jquery-ui.min.js"></script>
+
+  	
+
+  	<script type="text/javascript">
+
+  	$(document).ready(function() {
+  	var interval;
+$("#canvas").mousedown(function() {
+    interval = setInterval(performWhileMouseDown, 500);
+}).mouseup(function() {
+    clearInterval(interval);  
+});
+function performWhileMouseDown() {
+    
+    $('#canvas').mousemove(function(e){
+
+     
+        $('#canvas').append('<div style="margin-left:' + e.pageX + 'px; margin-top:' + e.pageY + 'px;" class="hey">' + '</div>');
+
+  });
+
+    
+    
+}
+
+});
+
+
+  	</script>
+
+</head>
+
+
+<body>
+
+
+<div id="canvas">
+
+</div>
+
+
+</body>
