@@ -11,9 +11,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="span12">
-                            <h2>Hey, ik ben Cody,</h2>
+                            <img src="/branding/cody.svg"  width="300" height="214"></img>
+                            <h2>Hallo, ik ben Cody.</h2>
                             <p>
-                              Ik zit in groep 8 en houd van coden.<br>
+                              Ik zit in Groep 8 van de Code School in Hilversum.<br>
                               Jij bent hier om ook te leren coden.<br>
                               <br>
                               <br>
