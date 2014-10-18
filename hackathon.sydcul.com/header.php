@@ -35,7 +35,9 @@
 			?></li>
             <li><a href="/">Home</a></li>
             <li><a href="about.php">About Cody</a></li>
-            <li><a href="levels.php">Levels</a></li>
+              <li class="dropdown">Test 
+                <li><a href="/game/index1.html">Levels</a></li>
+            </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
