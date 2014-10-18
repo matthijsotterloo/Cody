@@ -27,7 +27,7 @@
 			include('libraries/login.inc.php');
 			
 			$userid = logincheck();
-			if(!empty()) {
+			if(!empty($userid)) {
 				echo('Ingelogd als ' . getusername($userid));
 			} else {
 				echo('<a href="login.php">Inloggen</a>');
