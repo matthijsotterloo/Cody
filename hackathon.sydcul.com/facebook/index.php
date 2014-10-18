@@ -8,13 +8,12 @@ if(empty($_SESSION['FBID'])) {
 	header('Location: fbconfig.php');
 	die();
 }
-$usercheck = usercheck($_SESSION['FBID']);
-var_dump($usercheck);
-if(empty($usercheck)) {
+$facebookcheck = facebookcheck($_SESSION['FBID']);
+if(empty($facebookcheck)) {
 	register($_SESSION['FBID'], 'facebook', 'facebook');
 } else {
 	login($_SESSION['FBID'], 'facebook');
 }
-//header('Location: http://hackathon.sydcul.com/');
+header('Location: http://hackathon.sydcul.com/');
 die();
 ?>

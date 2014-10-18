@@ -163,4 +163,20 @@ function usercheck($userid) {
 		return false;
 	}
 }
+
+function facebookcheck($username) {
+	global $mysqli;
+	if ($stmt = $mysqli->prepare('SELECT id FROM users WHERE username=?')) {
+		$stmt->bind_param('s', $username);
+		$stmt->execute();
+		$stmt->bind_result($result);
+		$stmt->fetch();
+		$stmt->close();
+	}
+	if(!empty($result)) {
+		return true;
+	} else {
+		return false;
+	}
+}
 ?>
