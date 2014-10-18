@@ -1,0 +1,151 @@
+<!doctype html>
+
+<head>
+
+  <link rel="stylesheet" href="styles.css" />
+  
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/ui/1.8.18/jquery-ui.min.js"></script>
+
+  <script type="text/javascript">
+
+    var openerCount = 2;
+
+
+    function opener() {
+
+      if(openerCount%2 === 0) {
+        $('#opener').animate({ marginRight: '+=400px'});
+        openerCount++
+        document.getElementById("opener").innerHTML = ">";
+      } else {
+        $('#opener').animate({ marginRight: '-=400px'});
+        openerCount++
+        document.getElementById("opener").innerHTML = "<";
+      }
+    }
+
+  </script>
+
+
+  <script type="text/javascript">
+
+  function Hoi() {
+
+    $(document).ready(function() {
+
+
+      var offsetsone = document.getElementById('dan').getBoundingClientRect();
+      var topDan = offsetsone.top;
+      var leftDan = offsetsone.left;
+
+      var offsetstwo = document.getElementById('als').getBoundingClientRect();
+      var topAls = offsetstwo.top;
+      var leftAls = offsetstwo.left;
+
+      var offsetsthree = document.getElementById('anders').getBoundingClientRect();
+      var topAnders = offsetsthree.top;
+      var leftAnders = offsetsthree.left;
+
+      if(leftAls < leftDan && leftAls < leftAnders && leftDan < leftAnders) {
+        alert("HELL YEAH");
+      } else {
+        alert("GO F YOURSELF");
+      }
+
+    })
+  }
+
+
+    
+  $(document).ready(function() {
+    $('#als').hover(function() {
+
+      var offsetsone = document.getElementById('dan').getBoundingClientRect();
+      var topDan = offsetsone.top;
+      var leftDan = offsetsone.left;
+
+      var offsetstwo = document.getElementById('als').getBoundingClientRect();
+      var topAls = offsetstwo.top;
+      var leftAls = offsetstwo.left;
+
+      var offsetsthree = document.getElementById('anders').getBoundingClientRect();
+      var topAnders = offsetsthree.top;
+      var leftAnders = offsetsthree.left;
+
+      if(leftAls < leftDan && leftAls < leftAnders && leftDan < leftAnders) {
+        alert("HELL YEAH");
+      } else {
+      }
+
+
+
+      })
+  });
+
+    
+
+
+
+  </script>
+
+
+</head>
+
+<body>
+
+  <div id="sleutel" onclick="Hoi();">Sleutel</div>
+  <div id="slot">Slot</div>
+  <div id="opener" onClick="opener();"><</div>
+  <div id="code-area">
+
+    <div id="dan" class="block">Dan</div>
+    <div id="anders" class="block">Anders</div>
+    <div id="als" class="block">Als</div>
+
+
+
+  </div>
+
+  <canvas></canvas>
+
+  <script type="text/javascript">
+
+ 
+
+  $(document).ready(function() {
+
+  
+      var offsetsone = document.getElementById('dan').getBoundingClientRect();
+      var topDan = offsetsone.top;
+      var leftDan = offsetsone.left;
+
+      var offsetstwo = document.getElementById('als').getBoundingClientRect();
+      var topAls = offsetstwo.top;
+      var leftAls = offsetstwo.left;
+
+      var offsetsthree = document.getElementById('anders').getBoundingClientRect();
+      var topAnders = offsetsthree.top;
+      var leftAnders = offsetsthree.left;
+
+    
+    
+  });
+
+
+
+  </script>
+
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script> 
+  <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script>
+      $(function() {
+        $( "#sleutel" ).draggable();
+      });
+
+      $(function() {
+        $( ".block" ).draggable();
+      });
+  </script>
+</body>
