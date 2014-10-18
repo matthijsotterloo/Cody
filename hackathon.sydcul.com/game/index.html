@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link rel="stylesheet/less" type="text/css" href="assets/less/main.less">
+        <link rel="stylesheet/less" type="text/css" href="bower_components/uikit/css/components/notify.almost-flat.min.css">
         
         <script>
         less = {
@@ -67,13 +68,11 @@
                 <div class="uk-grid">
                     <div class="uk-width-1-4">
                         <div id="input" class="uk-placeholder" ondrop="handleDrop(event)" ondragover="allowDrop(event)">
-                            <div></div>
                         </div>
                     </div>
                     
                     <div class="uk-width-1-4">
                         <div id="expression" class="uk-placeholder" ondrop="handleDrop(event)" ondragover="allowDrop(event)">
-                            <div></div>
                         </div>
                     </div>
                     
@@ -85,7 +84,6 @@
                     
                     <div class="uk-width-1-4">
                         <div id="output" class="uk-placeholder" ondrop="handleDrop(event)" ondragover="allowDrop(event)">
-                            <div></div>
                         </div>
                     </div>
                 </div>
@@ -154,10 +152,23 @@
             </div>
         </div>
         
+        <div id="success-modal" class="uk-modal">
+            <div class="uk-modal-dialog uk-modal-dialog-frameless">
+                <a href="" class="uk-modal-close uk-close uk-close-alt"></a>
+            </div>
+        </div>
+        
+        <div id="error-modal" class="uk-modal">
+            <div class="uk-modal-dialog uk-modal-dialog-frameless">
+                <a href="" class="uk-modal-close uk-close uk-close-alt"></a>
+            </div>
+        </div>
+        
         <div id="opener" onclick="opener();"><i class="uk-icon-info"></i></div>
         <div id="code-area">&nbsp;</div>
         
         <script type="text/javascript" src="bower_components/uikit/js/uikit.min.js"></script>
+        <script type="text/javascript" src="bower_components/uikit/js/components/notify.min.js"></script>
         <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
         <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
         
@@ -183,13 +194,50 @@
                     return;
                 }
                 
-                if(userChoices['expression']['item'] == 'gt' && userChoices['expression']['input'] < userChoices['input']['input']) { //Expression is meer dan input
-					console.log('Goed zo! (GT)');
-				} else if(userChoices['expression']['item'] == 'lt' && userChoices['expression']['input'] > userChoices['input']['input']) { //Expression is minder dan input
-					console.log('Goed zo! (LT)');
+                if (userChoices['output'] !== null && userChoices['output']['item'] !== 'lightbulb') {
+                    $.UIkit.notify('That is not a lightbulb!');
+                    clearUserChoices();
+                    return;
+                }
+                
+                if (userChoices['expression']['item'] == 'gt' && userChoices['input']['input'] > userChoices['expression']['input']) {
+                    $.UIkit.notify('That is correct!');
+                    return;
+                    
+				} else if (userChoices['expression']['item'] == 'lt' && userChoices['input']['input'] < userChoices['expression']['input']) {
+				    $.UIkit.notify('That is correct!');
+                    return;
+                    
 				} else {
-					console.log('DENIED!');
+				    $.UIkit.notify('Please try again!');
+				    clearUserChoices();
+                    return;
 				}
+            }
+            
+            function clearUserChoices() {
+                userChoices = {
+                    input: null,
+                    expression: null,
+                    output: null
+                };
+                
+                var elements = [
+                    document.getElementById('input'),
+                    document.getElementById('expression'),
+                    document.getElementById('output')
+                ];
+                
+                for (i=0; i<=3; i++) {
+                    if (elements[i]) {
+                        while (elements[i].hasChildNodes()) {
+                            elements[i].removeChild(elements[i].lastChild);
+                        };
+                        
+                        elements[i].innerHTML = "";
+                    };                    
+                }
+                
             }
         
             function handleDrop(event) {
@@ -201,12 +249,16 @@
                 if (item == 'keyboard' || item == 'gt' || item == 'lt') {
                     var input = window.prompt("Input:", "");
                 
-                    event.target.innerHTML = '';
+                    while (event.target.hasChildNodes()) {
+                        event.target.removeChild(event.target.lastChild);
+                    }
                     event.target.innerHTML = document.getElementById(item).innerHTML + '<br>(' + input + ')';
                     
                     userChoices[type] = { 'item': item, 'input': input };
                 } else {
-                    event.target.innerHTML = '';
+                    while (event.target.hasChildNodes()) {
+                        event.target.removeChild(event.target.lastChild);
+                    }
                     event.target.innerHTML = document.getElementById(item).innerHTML;
                     
                     userChoices[type] = { 'item': item };
