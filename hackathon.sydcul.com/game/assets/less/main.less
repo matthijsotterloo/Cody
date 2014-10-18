@@ -27,11 +27,11 @@
 @navbar-nav-active-background:                  @global-color-green;
 @navbar-nav-active-color:                       #fff;
 
-@button-primary-background:                     darken(@global-color-blue, 20%);
+@button-primary-background:                     darken(#05ce78, 30%);
 @button-primary-color:                          #fff;
-@button-primary-hover-background:               darken(@global-color-blue, 20%);
+@button-primary-hover-background:               darken(#05ce78, 20%);
 @button-primary-hover-color:                    #fff;
-@button-primary-active-background:              darken(@global-color-blue, 20%);
+@button-primary-active-background:              darken(#05ce78, 20%);
 @button-primary-active-color:                   #fff;
 
 @placeholder-margin-vertical:                   15px;
@@ -80,15 +80,33 @@ html {
     font-size: 2.5em;
     padding: 2em 0;
     color: #fff;
+    
+    strong {
+        display: block;
+        padding-top: .45em;
+        font-size: 2em;
+        font-weight: 400;
+    }
 }
 
 header {
     padding: 2em 0;
-    border-bottom: 2px solid darken(#e8643e, 20%);
     
     h2 {
         margin: 0;
         color: #eee;
+    }
+}
+
+.stripe {
+    padding: 1em 0;
+    background: darken(#05ce78, 20%);
+    border-bottom: 2px solid darken(#05ce78, 30%);
+    
+    h3 {
+        margin: 0;
+        margin-top: .35em;
+        color: #fff;
     }
 }
 
@@ -124,6 +142,11 @@ main {
             text-align: center;
             margin: 1em;
             padding: 2em;
+            
+            strong {
+                font-weight: 400;
+                font-size: 4em;
+            }
         }
         
         .item:hover {
