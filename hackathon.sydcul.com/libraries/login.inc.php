@@ -65,6 +65,21 @@ function logincheck() {
 	}
 }
 
+function getusername($userid) {
+	if ($stmt = $mysqli->prepare('SELECT username FROM users WHERE userid=?')) {
+		$stmt->bind_param("i", $userid);
+		$stmt->execute();
+		$stmt->bind_result($username);
+		$stmt->fetch();
+		$stmt->close();
+	}
+	if(!empty($username)) {
+		return $username;
+	} else {
+		return false;
+	}
+}
+
 function logout($userid = null) {
 	//Logt uit
 	if(session_status() != PHP_SESSION_ACTIVE) {

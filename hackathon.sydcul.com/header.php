@@ -22,6 +22,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
+			<li><?php if(!empty(logincheck())) { echo('Ingelogd als ' . getusername(logincheck())); } else { echo('<a href="login.php">Inloggen</a>'); } ?></li>
             <li><a href="/">Home</a></li>
             <li><a href="over.php">Over Cody</a></li>
             <li><a href="levels.php">Levels</a></li>
