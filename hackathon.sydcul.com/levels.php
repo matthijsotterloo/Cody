@@ -3,20 +3,9 @@
 
         <meta charset="utf-8">
         <title>Cody | Levels</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,300,100,100italic,300italic,400italic,700,700italic">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/form-elements.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/media-queries.css">
-        <link rel="stylesheet" href="assets/css/bootstrap-social.css">
-        <link href="assets/css/docs.css" rel="stylesheet" >
- 
-    </head>
-
-    <body>
+        <?php include 'header.php';?>
+        
         <ul class="nav nav-pills">
             <p style="color:#FFFFFF">Ik weet het de align is niet goed. Als je niks te doen hebt fix het. MAAR BLIJF MET JE POTEN VAN DE REST AF!</p>
             <li class="active"><a href="index.php">Home</a></li>
