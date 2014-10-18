@@ -137,7 +137,7 @@
                         
                         <div class="uk-width-1-5">
                             <div class="item-outer">
-                                <a id="bicycle" class="item" draggable="true" ondragstart="handleDrag(event)">
+                                <a id="bicycle10" class="item" draggable="true" ondragstart="handleDrag(event)">
                                     <i class="uk-icon-bicycle uk-icon-large"></i><br>
                                     <span>Bicycle<br>10 m distance</span>
                                 </a>
@@ -194,7 +194,7 @@
                     return;
                 }
                 
-                if (userChoices['output'] !== null && userChoices['output']['item'] !== 'bicycle') {
+                if (userChoices['output'] !== null && userChoices['output']['item'] !== 'bicycle10') {
                     $.UIkit.notify('This program should end with the bicycle at 10 meter distance!');
                     window.setInterval("clearUserChoices()", 1000);
                     return;
