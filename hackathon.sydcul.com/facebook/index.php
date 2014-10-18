@@ -9,11 +9,10 @@ if(empty($_SESSION['FBID'])) {
 	die();
 }
 $usercheck = usercheck($_SESSION['FBID']);
-if(empty($usercheck)) {
+if(!$usercheck) {
 	register($_SESSION['FBID'], 'facebook', 'facebook');
 } else {
 	login($_SESSION['FBID'], 'facebook');
-	sleep(2);
 }
 header('Location: http://hackathon.sydcul.com/');
 die();
