@@ -65,19 +65,25 @@
         <main>
             <div class="uk-container uk-container-center">
                 <div class="uk-grid">
-                    <div class="uk-width-1-3">
+                    <div class="uk-width-1-4">
                         <div id="placeholder_1" class="uk-placeholder" ondrop="handleDrop(event)" ondragover="allowDrop(event)">
                             <div></div>
                         </div>
                     </div>
                     
-                    <div class="uk-width-1-3">
+                    <div class="uk-width-1-4">
                         <div id="placeholder_2" class="uk-placeholder" ondrop="handleDrop(event)" ondragover="allowDrop(event)">
                             <div></div>
                         </div>
                     </div>
                     
-                    <div class="uk-width-1-3">
+                    <div class="uk-width-1-4">
+                        <div class="long-arrow">
+                            <center><i class="uk-icon-long-arrow-right uk-icon-large"></i></center>
+                        </div>
+                    </div>
+                    
+                    <div class="uk-width-1-4">
                         <div id="placeholder_3" class="uk-placeholder" ondrop="handleDrop(event)" ondragover="allowDrop(event)">
                             <div></div>
                         </div>
@@ -98,24 +104,37 @@
                         <div class="uk-width-1-5">
                             <div class="item-outer">
                                 <a class="item" draggable="true" ondragstart="handleDrag(event)">
-                                    <strong>&equals;&equals;</strong>
+                                    <i class="uk-icon-keyboard-o uk-icon-large"></i>
                                 </a>
                             </div>
                         </div>
+                        
                         <div class="uk-width-1-5">
                             <div class="item-outer">
                                 <a class="item" draggable="true" ondragstart="handleDrag(event)">
-                                    <strong>&lt;</strong>
+                                    <i class="uk-icon-key uk-icon-large"></i>
                                 </a>
                             </div>
                         </div>
+                        
                         <div class="uk-width-1-5">
                             <div class="item-outer">
                                 <a class="item" draggable="true" ondragstart="handleDrag(event)">
-                                    <strong>&gt;</strong>
+                                    <i class="uk-icon-chevron-left uk-icon-large"></i>
                                 </a>
                             </div>
                         </div>
+                        
+                        <div class="uk-width-1-5">
+                            <div class="item-outer">
+                                <a class="item" draggable="true" ondragstart="handleDrag(event)">
+                                    <i class="uk-icon-chevron-right uk-icon-large"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="uk-grid">
                         <div class="uk-width-1-5">
                             <div class="item-outer">
                                 <a class="item" draggable="true" ondragstart="handleDrag(event)">
@@ -127,16 +146,6 @@
                             <div class="item-outer">
                                 <a class="item" draggable="true" ondragstart="handleDrag(event)">
                                     <i class="uk-icon-cab uk-icon-large"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="uk-grid">
-                        <div class="uk-width-1-5">
-                            <div class="item-outer">
-                                <a class="item" draggable="true" ondragstart="handleDrag(event)">
-                                    <i class="uk-icon-filter uk-icon-large"></i>
                                 </a>
                             </div>
                         </div>
@@ -172,7 +181,9 @@
         
             function handleDrop(event) {
                 event.preventDefault();
-                event.target.innerHTML = event.dataTransfer.getData("text/html");
+                var input = window.prompt("Input:", "");
+                
+                event.target.innerHTML = event.dataTransfer.getData("text/html") + '<br>(' + input + ')';
             }
         </script>
     </body>
