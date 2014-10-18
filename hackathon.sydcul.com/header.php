@@ -30,7 +30,7 @@
 			if(!empty($userid)) {
 				echo('<a href="logout.php">Logged in as ' . getusername($userid) . '</a>');
 			} else {
-				echo('<a href="login.php">Inloggen</a>');
+				echo('<a href="login.php">Log in</a>');
 			}
 			?></li>
             <li><a href="/">Home</a></li>
