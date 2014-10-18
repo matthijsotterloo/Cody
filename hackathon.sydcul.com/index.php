@@ -19,14 +19,16 @@
                               Wat leuk dat jij ook wil leren programmeren!<br>
                               Daar ga ik jou mee helpen. </br>
                               <br>
-                              Heb je al een facebook account? <br>
+                              Heb je al een Facebook account? <br>
                               <br>
-                            <a class="btn btn-block btn-social btn-facebook" href="/facebook/">
-                                <i class="fa fa-facebook"></i> Inloggen met Facebook</a>
-                            </a>
+
+                            <a class="btn btn-block btn-social btn-lg btn-facebook" href="/facebook"><i class="fa fa-facebook"></i>Inloggen met Facebook</a>
+                            <i class="fa fa-facebook"></i>
+                            Inloggen met Facebook
+                        </a></a>
 
                             <br>
-                            <p>Heb je geen facebook account? Klik dan <a href="register.php" target="_blank">hier</a>
+                            <p>Heb je geen Facebook account? Klik dan <a href="register.php" target="_blank">hier</a>
 
                         
                             <br>
