@@ -28,7 +28,7 @@
 			
 			$userid = logincheck();
 			if(!empty($userid)) {
-				echo('Ingelogd als ' . getusername($userid));
+				echo('<a href="#">Ingelogd als ' . getusername($userid) . '</a>');
 			} else {
 				echo('<a href="login.php">Inloggen</a>');
 			}
