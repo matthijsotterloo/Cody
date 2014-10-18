@@ -43,6 +43,7 @@ function login($username, $password) {
 		return false;
 	}
 }
+}
 
 function logincheck() {
 	//Checkt of er een gebruiker ingelogd is
