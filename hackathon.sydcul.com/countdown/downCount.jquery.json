@@ -1,0 +1,24 @@
+{
+    "name": "CountDown",
+    "version": "1.0.0",
+    "title": "Simple countdown by myself yolo jwz omdat het kan",
+    "description": "Simple countdown by myself yolo jwz omdat het kan",
+    "keywords": [
+        "countdown",
+        "yolo",
+        "jwz"
+    ],
+    "author": {
+        "name": "Matthijs Otterloo",
+        "url": "https://mattowebdesign.nl"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://ionden.com/a/licence-en.html"
+        }
+    ],
+    "dependencies": {
+        "jquery": ">=1.7"
+    }
+}
