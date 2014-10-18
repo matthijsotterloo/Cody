@@ -15,17 +15,17 @@
                                 <img src="/branding/logo_home.svg" style="width:420px;height:420px"></img>
                             </div>
                             <p>
-                              Leuk dat je op mijn website komt om te leren programmeren!<br>
-                              Programmeren is makkelijk en leuk. </br>
+                              Hi! I'm glad you visited my website<br>
+							  Programming is fun, and easy!<br>
                               <br>
-                              Heb je al een Facebook account? <br>
+                              Have you got a Facebook account already?<br>
                               <br>
 
-                            <a class="btn btn-block btn-social btn-lg btn-facebook" href="/facebook" targe="_blank"><i class="fa fa-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inloggen met Facebook</a>
+                            <a class="btn btn-block btn-social btn-lg btn-facebook" href="/facebook" targe="_blank"><i class="fa fa-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Log in with Facebook</a>
                         </a></a>
 
                             <br>
-                            <p>Heb je geen Facebook account? Klik dan <a href="registertest.php" target="_blank">hier</a>
+                            <p>Haven't got a Facebook account? Click<a href="register.php" target="_blank">here</a>
 
                         
                             <br>

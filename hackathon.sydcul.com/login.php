@@ -10,16 +10,11 @@ if(!empty($_POST['logout'])) {
 ?>
 <html>
 <body>
-<h1>Inloggen</h1>
-<form action="logintest.php" method="POST">
+<h1>Login</h1>
+<form action="login.php" method="POST">
 <input type="text" name="username"><br>
 <input type="password" name="password"><br>
-<input type="submit"><br>
-</form>
-Ingelogd: <?php var_dump(logincheck()); ?><br>
-<form method="POST" action="logintest.php">
-<input type="hidden" name="logout" value="1">
-<input type="submit" value="Uitloggen">
+<input type="submit">
 </form>
 </body>
 </html>

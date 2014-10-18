@@ -28,13 +28,13 @@
 			
 			$userid = logincheck();
 			if(!empty($userid)) {
-				echo('<a href="logout.php">Ingelogd als ' . getusername($userid) . '</a>');
+				echo('<a href="logout.php">Logged in as ' . getusername($userid) . '</a>');
 			} else {
-				echo('<a href="logintest.php">Inloggen</a>');
+				echo('<a href="login.php">Inloggen</a>');
 			}
 			?></li>
             <li><a href="/">Home</a></li>
-            <li><a href="over.php">Over Cody</a></li>
+            <li><a href="about.php">About Cody</a></li>
             <li><a href="levels.php">Levels</a></li>
           </ul>
         </div><!--/.nav-collapse -->
