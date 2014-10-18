@@ -45,6 +45,7 @@ function login($username, $password) {
 }
 
 function logincheck() {
+	global $mysqli;
 	//Checkt of er een gebruiker ingelogd is
 	if(session_status() != PHP_SESSION_ACTIVE) {
 		session_start();
