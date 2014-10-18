@@ -5,13 +5,7 @@
         <title>Cody | Over Cody</title>
         
         <?php include 'header.php';?>
-
-		  <ul class="nav nav-pills">
-            <p style="color:#FFFFFF">Ik weet het de align is niet goed. Als je niks te doen hebt fix het. MAAR BLIJF MET JE POTEN VAN DE REST AF!</p>
-            <li class="active"><a href="index.php">Home</a></li>
-            <li class="disabled"><a href="">Over Cody</a></li>
-            <li class="disabled"><a href="">Levels</a></li>
-        </ul>
+        
         <div class="coming-soon">
             <div class="inner-bg">
                 <div class="container">
