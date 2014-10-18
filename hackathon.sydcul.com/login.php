@@ -1,55 +1,27 @@
-<?php
-include('libraries/base.inc.php');
-include('libraries/login.inc.php');
-if(!empty($_POST['username'])) {
-	$loginstatus = login($_POST['username'], $_POST['password']);
-}
-if(!empty($_POST['logout'])) {
-	logout();
-}
-?>
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cody | Login</title>
+    <?php include 'header.php';?>
 
-        <meta charset="utf-8">
-        <title>Cody | Inloggen</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <body>
 
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,300,100,100italic,300italic,400italic,700,700italic">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/form-elements.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/media-queries.css">
-        <link rel="stylesheet" href="assets/css/bootstrap-social.css">
-        <link href="assets/css/docs.css" rel="stylesheet" >
- 
-    </head>
-<body>
-	<div class="coming-soon">
-            <div class="inner-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="span12">
-							<h1>Inloggen</h1>
-                            <p>Log in met je gebruikersnaam en wachtwoord. Heb je die nog niet? <a href="register.php">Registreer je dan.</a></p>
-                                <form action="login.php" method="POST">
-                               <p>Gebruikersnaam: </p><input type="text" name="username"><br>
-                               <p>Wachtwoord: </p><input type="password" name="password"><br>   
-                                <button class="btn" input type="submit"></button><br>
-</form>
+    <div class="container">
 
-</div>
-</div>
-</div>
-</div>
-</div>
+      <form class="form-signin" role="form">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <input type="email" class="form-control" placeholder="Email address" required autofocus>
+        <input type="password" class="form-control" placeholder="Password" required>
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
 
-<script src="assets/js/jquery-1.10.2.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <script src="assets/js/jquery.backstretch.min.js"></script>
-        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-        <script src="assets/js/jquery.ui.map.min.js"></script>
-        <script src="assets/js/scripts.js"></script>
-</body>
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>
