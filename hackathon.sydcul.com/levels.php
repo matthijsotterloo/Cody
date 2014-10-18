@@ -18,7 +18,7 @@
         <div class="row">
             <div class="col-md-6 portfolio-item">
                 <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                    <img class="img-responsive" src="assets/img/level1.jpg" alt="">
                 </a>
                 <h3>
                     <a href="level_1.php" target="_blank">Level 1</a>
