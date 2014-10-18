@@ -16,8 +16,8 @@
                             </div>
                             <h2>Hallo, ik ben Cody.</h2>
                             <p>
-                              Wat leuk dat jij ook wil leren programmeren!<br>
-                              Daar ga ik jou mee helpen. </br>
+                              Leuk dat je op mijn website komt om te leren programmeren!<br>
+                              Programmeren is makkelijk en leuk. </br>
                               <br>
                               Heb je al een Facebook account? <br>
                               <br>
