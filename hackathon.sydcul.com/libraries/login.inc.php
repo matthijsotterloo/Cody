@@ -45,7 +45,6 @@ function login($username, $password) {
 }
 
 function logincheck() {
-	global $mysqli;
 	//Checkt of er een gebruiker ingelogd is
 	if(session_status() != PHP_SESSION_ACTIVE) {
 		session_start();
@@ -67,6 +66,7 @@ function logincheck() {
 }
 
 function getusername($userid) {
+	global $mysqli;
 	if ($stmt = $mysqli->prepare('SELECT username FROM users WHERE userid=?')) {
 		$stmt->bind_param("i", $userid);
 		$stmt->execute();
