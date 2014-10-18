@@ -21,23 +21,22 @@
         </div>
 
         <div class="row">
-
-            <a href="/web">
+            
                 <div class="col-md-8">
-                <img class="img-responsive" src="assets/img/level1.jpg" alt="">
+                <a href="/web"><img class="img-responsive" src="assets/img/level1.jpg" alt=""></a>
             </div>
 
             <div class="col-md-4">
-                <h3 style="color:#FFFFFF">Cody - Level 1</h3>
-                <p style="color:#FFFFFF">Leuk dat je wil leren coden! In dit eerste level ga je aan de slag met je eigen personage. Teken een eigen personage en laat hem zelfs bewegen door een landschap! Spannend!</p>
-                <h3 style="color:#FFFFFF">Wat ga je doen in dit level:</h3>
+                 <a href="/web"><h3 style="color:#FFFFFF">Cody - Level 1</h3></a>
+                 <a href="/web"><p style="color:#FFFFFF">Leuk dat je wil leren coden! In dit eerste level ga je aan de slag met je eigen personage. Teken een eigen personage en laat hem zelfs bewegen door een landschap! Spannend!</p></a>
+                 <a href="/web"><h3 style="color:#FFFFFF">Wat ga je doen in dit level:</h3></a>
                 <ul style="color:#FFFFFF">
-                    <li>Teken een poppetje</li>
-                    <li>Laat het poppetje bewegen</li>
+                     <a href="/web"><li>Teken een poppetje</li></a>
+                     <a href="/web"><li>Laat het poppetje bewegen</li></a>
                 </ul>
             </div>
             <br>
-            <button class="btn">&nbsp;Begin met level 1 &nbsp;</button>
+             <a href="/web"><button class="btn">&nbsp;Begin met level 1 &nbsp;</button></a>
             </a>
 
         </div>
