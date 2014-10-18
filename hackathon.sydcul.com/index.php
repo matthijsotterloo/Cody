@@ -45,7 +45,7 @@
                             </a>
 
                             <br>
-                            <p>Heb je geen facebook account? Klik dan <a href="login.php" target="_blank">hier</a>
+                            <p>Heb je geen facebook account? Klik dan <a href="register.php" target="_blank">hier</a>
 
                         
                             <br>
