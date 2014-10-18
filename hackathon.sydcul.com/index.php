@@ -36,6 +36,7 @@
                             <p>
                               Leuk dat je geinteresseerd bent in programmeren! <br>
                               Vandaag ga ik jou dat leren! </br>
+							  Of je dat nou wilt of niet! Je moet wel! Je houdt toch van je familie? <br>
                               <br>
                               Waar wacht je nog op? <br>
                               <br>
@@ -44,7 +45,7 @@
                             </a>
 
                             <br>
-                            <p>Heb je geen facebook account? Klik dan <a href="register.php" target="_blank">hier</a>
+                            <p>Heb je geen facebook account? Klik dan <a href="login.php" target="_blank">hier</a>
 
                         
                             <br>
