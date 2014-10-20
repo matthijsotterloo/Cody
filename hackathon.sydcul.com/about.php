@@ -2,7 +2,7 @@
     <head>
 
         <meta charset="utf-8">
-        <title>Cody | About Cody</title>
+        <title>Cody | Over Cody</title>
         
         <?php include 'header.php';?>
         
@@ -12,16 +12,16 @@
                     <div class="row">
                         <div class="span12">
                             <img src="/branding/Cody.svg"  width="300" height="214"></img>
-                            <h2>Hi, I'm Cody.</h2>
+                            <h2>Hi, Ik ben Cody.</h2>
                             <p>
-                              I'm in 6th grade and I live in Hilversum.<br>
-                              I'm here to help you how to learn to code.<br>
+                              Ik zit in de 6de en woon in Hilversum.<br>
+                              Ik ben hier om jou te leren programmeren.<br>
                               <br>
                               <br>
-                              A lot of things in everyday life have been programmed at one point. And with me, you are going to be able to code things yourself!</p>
+                              Een aantal dingen die je dagelijks gebruikt zijn ook geprogrammeerd. Met mij, ga jij leren je eigen dingen te programmeren!</p>
                               <br>
                               <br>
-                              <a href="http://hackathon.sydcul.com/game/index.html" target="_blank"><button type="submit" class="btn">&nbsp;Hop in with Cody!! &nbsp;</button>
+                              <a href="http://hackathon.sydcul.com/game/index.html" target="_blank"><button type="submit" class="btn">&nbsp;Ga mee met Cody!! &nbsp;</button>
 
                                 <br>
                                 <br>
