@@ -18,7 +18,7 @@
                               Wohoooo misschien maak jij later ook wel zo'n toffe website.<br>
                               <br>
                               <br>
-                              Wil je nog meer leren? Binnenkort zullen we meer levels toevoegen dus kom binnenkort terug!</p>
+                              Wil je nog meer leren? Binnenkort zullen we meer levels toevoegen dus kom snel terug!</p>
                               <br>
                               <br>
                               <a href="http://hackathon.sydcul.com/" target="_blank"><button type="submit" class="btn">&nbsp;Terug naar de website!! &nbsp;</button>
