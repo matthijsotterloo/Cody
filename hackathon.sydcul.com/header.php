@@ -35,6 +35,7 @@
 			?></li>
             <li><a href="/">Home</a></li>
             <li><a href="about.php">Over Cody</a></li>
+            <li><a href="app.php">App</a></li>
             <li><a href="/game/index.html">Spelen!</a></li>
             </li>
           </ul>
