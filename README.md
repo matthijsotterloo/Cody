@@ -1,4 +1,4 @@
-YCHackathon
+Cody
 ===========
 
-Repository for the Young Creators Hackathon!
+We made this project during the Young Creators Hackathon 2014! 
